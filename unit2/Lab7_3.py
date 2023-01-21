@@ -26,6 +26,7 @@ else:
         print("Brawo! Do trzech razy sztuka")
     else:
         msg = "niestety myslalem o liczbie " + str(number) + "."
+        print(msg)
 
     #print("niestety myslalem o liczbie " + str(number) + ".")
 
