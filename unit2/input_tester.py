@@ -22,4 +22,8 @@
 # result = (a ** 2 + b ** 2) ** .5
 # print("Długość przeciwprostokątnej wynosi " + str(result))
 
-print("Elo mordo xd " * 8)
+# print("Elo mordo xd " * 8)
+
+print("+" + 10 * "-" + "+")
+print(("|" + " " * 10 + "|" + "\n") * 5, end="")
+print("+" + 10 * "-" + "+")
