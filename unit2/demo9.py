@@ -30,58 +30,70 @@ is_sun_shining = False
 #         print(i)
 
 #operatory bitowe
-
-a = 5
-b = 3
-# koniunkcja bitowa
-print(a, "&", b, "=", a & b)
-# print(bin(a))
-print("{:08b}".format(a))
-print("{:08b}".format(b))
-print("-" * 8)
-print("{:08b}".format(a & b))
-
-print()
-
-a = 5
-b = 3
-# alternatywa bitowa
-print(a, "|", b, "=", a | b)
-# print(bin(a))
-print("{:08b}".format(a))
-print("{:08b}".format(b))
-print("-" * 8)
-print("{:08b}".format(a | b))
-
-print()
-
-# alternatywa rozłączna bitowa
-print(a, "^", b, "=", a ^ b)
-# print(bin(a))
-print("{:08b}".format(a))
-print("{:08b}".format(b))
-print("-" * 8)
-print("{:08b}".format(a ^ b))
-
-print()
-
-print(a, ">>", b, "=", a >> b)
-# print(bin(a))
-print("{:08b}".format(a))
+#
+# a = 5
+# b = 3
+# # koniunkcja bitowa
+# print(a, "&", b, "=", a & b)
+# # print(bin(a))
+# print("{:08b}".format(a))
 # print("{:08b}".format(b))
-print("-" * 8)
-print("{:08b}".format(a >> b))
-
-print()
-# negacja bitowa
-print("~" + str(a), "=", ~a)
-# print(bin(a))
-print("{:08b}".format(a))
+# print("-" * 8)
+# print("{:08b}".format(a & b))
+#
+# print()
+#
+# a = 5
+# b = 3
+# # alternatywa bitowa
+# print(a, "|", b, "=", a | b)
+# # print(bin(a))
+# print("{:08b}".format(a))
 # print("{:08b}".format(b))
-print("-" * 8)
-print("{:08b}".format(~a))
+# print("-" * 8)
+# print("{:08b}".format(a | b))
+#
+# print()
+#
+# # alternatywa rozłączna bitowa
+# print(a, "^", b, "=", a ^ b)
+# # print(bin(a))
+# print("{:08b}".format(a))
+# print("{:08b}".format(b))
+# print("-" * 8)
+# print("{:08b}".format(a ^ b))
+#
+# print()
+#
+# print(a, ">>", b, "=", a >> b)
+# # print(bin(a))
+# print("{:08b}".format(a))
+# # print("{:08b}".format(b))
+# print("-" * 8)
+# print("{:08b}".format(a >> b))
+#
+# print()
+# # negacja bitowa
+# print("~" + str(a), "=", ~a)
+# # print(bin(a))
+# print("{:08b}".format(a))
+# # print("{:08b}".format(b))
+# print("-" * 8)
+# print("{:08b}".format(~a))
+#
+# print()
+#
+# for i in range(5, -6, -1):
+#     print("{0:08b} => {1:d}".format(i & 255, i))
 
-print()
+a = 3
+b = 4
+c = 7
 
-for i in range(5, -6, -1):
-    print("{0:08b} => {1:d}".format(i & 255, i))
+# def get(a):
+#     print("!!!!")
+#     return  a
+
+print(a < b < c)
+# znaczy to samo co
+print(a < b and b < c)
