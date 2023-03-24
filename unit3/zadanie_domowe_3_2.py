@@ -20,10 +20,18 @@ print("Piramida będzie składać się z", pyramide_by_levels(levels), "puszek."
 
 cans = int (input("Podaj ilość puszek: "))
 
+# def pyramide_by_cans(cans):
+#     if (cans == 0):
+#         return 0
+#     else:
+#         return cans - pyramide_by_cans(cans - 1)
+#
+# print("Piramida będzie składać się z", pyramide_by_cans(cans), "poziomów.")
+
 def pyramide_by_cans(cans):
-    if (cans == 0):
-        return 0
-    else:
-        return cans - pyramide_by_cans(cans - 1)
+    level = 1
+    while pyramide_by_cans(level) <= cans:
+        level += 1
+    return level - 1, pyramide_by_cans(level - 1)
 
 print("Piramida będzie składać się z", pyramide_by_cans(cans), "poziomów.")
