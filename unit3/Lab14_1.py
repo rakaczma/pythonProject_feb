@@ -22,4 +22,4 @@ while True:
     if name in phones:
         print("Telefon: ", phones[name])
     else:
-        print("Nie znaleziono telfonu dla imienia:", name)
+        print("Nie znaleziono telefonu dla imienia:", name)
