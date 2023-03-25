@@ -6,8 +6,19 @@ def draw_numbers():
     lucky_numbers.sort()
     return lucky_numbers
 
+def get_game_system():
+    while True:
+        try:
+            n = int(input("Podaj ile liczb chcesz skreślić (6-12)? "))
+            if n < 6 or n > 12:
+                print("należy podać liczbę z przedziału 6-12!")
+                continue
+            break
+        except:
+            print("To nie jest liczba!")
+    return n
 def get_user_numbers():
-    n = 6
+    n = get_game_system()
     counter = 1
     user_numbers = []
     while counter < n + 1:
