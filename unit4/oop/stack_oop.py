@@ -10,6 +10,9 @@ class Stack: # definiujemy klasę stosu
         del  self.__stack_list[-1]
         return val
 
+    def show(self):
+        print(self.__stack_list)
+
 #---------------------------------------
 
 obj = Stack()
